@@ -135,5 +135,4 @@
 
 
 
-
-    End: This was my Final Project for CS50P, thanks for reading my README.md file!
+### End: This was my Final Project for CS50P, thanks for reading my README.md file!
