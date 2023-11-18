@@ -15,7 +15,7 @@
 - Email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 - Password: /^[^,]*$/
 - Code: /^[0-9].+$/
-    This is the regexes you have to follow to complete register, the reason username don't have a regex,d
+  This is the regexes you have to follow to complete register, the reason username don't have a regex,d
     is because you can be named anything you want, it just has to be unique.
     When you have completed the first step of register you will get a mail, or get sent back to register if you did it wrong.
     The mail is sent from a script on the server called "SendMail.py",
