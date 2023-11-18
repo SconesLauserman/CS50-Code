@@ -9,12 +9,12 @@
     When you go into the website you will get prompted to either log in or register, you don't have access to any other page.
     To log in you'll have to give 5 data values FirstName, LastName, Username, Email, Password.
     TO log in you have to fill some different requirements here is them all:
-    FirstName: /^[a-zA-Z]*$/,
-    LastName: /^[a-zA-Z]*$/,
-    Username: "Username",
-    Email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-    Password: /^[^,]*$/,
-    Code: /^[0-9].+$/
+- FirstName: /^[a-zA-Z]*$/
+- LastName: /^[a-zA-Z]*$/
+- Username: "Username"
+- Email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+- Password: /^[^,]*$/
+- Code: /^[0-9].+$/
     This is the regexes you have to follow to complete register, the reason username don't have a regex,d
     is because you can be named anything you want, it just has to be unique.
     When you have completed the first step of register you will get a mail, or get sent back to register if you did it wrong.
@@ -29,7 +29,7 @@
     In all we have 10 pages on the server, but only 3 are in use, that is /register, /login and /chat the others are only for show.
 
 
-    Adding a friend: 
+#### Adding a friend: 
 
     To add a friend, you simply has to click the add friend button at the top left corner, here there is two button; Add Friend and AddGroup,
         -Only AddFriend is working while the AddGroup is under development.
@@ -44,7 +44,7 @@
     If you give a valid username the program will add them to your profile and make a dedicated file to you and you're friends chat
     it will make a dedicated file in you're and their profile. which means as soon as they reload the page you are also their friend.
 
-    Sending Messages:
+### Sending Messages:
     To send a message you have to be within a users chat history, to do this click their li element in the list of friends hierarchy,
     When you have clicked the li element you and you're friends Chat History will get displayed.
     Now you can go down in the input field at the bottom and within type you're message, when you have dont that you can either,
@@ -52,7 +52,7 @@
     When you send a message it will add it in you're and their profile and has a typical response time under 1 second for your friend to see the message.
 
 
-    File Structure:
+### File Structure:
     Users 
         username1 <folder>
             ChatHistory <folder>
@@ -71,7 +71,7 @@
         Emails.txt <txt>
     
 
-    Verification Code/SendMail():
+### Verification Code/SendMail():
 
     When you type in all you're data to the input fields within register you will get a email to you're inputted email address, let's look into how it does this:
     
@@ -96,7 +96,7 @@
 
 
 
-    Different Python Files & How They Work: 
+### Different Python Files & How They Work: 
 
 
 
