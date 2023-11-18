@@ -1,0 +1,72 @@
+#FullUserContainer {
+    width: 20%;
+    height: 800px;
+    background: #F0C987;
+    float: left;
+}
+
+#FullUserList li {
+    width: 100%;
+    height: 50px;
+    background-color: #C97D60;
+    border-top: solid 0.5px #F0C987;
+    cursor: pointer;
+
+}
+
+#SearchUserInput {
+    width: 99.5%;
+    height: 90%;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+
+
+}
+
+#FullSearchUserInputContainer {
+    width: 100%;
+    height: 30px;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#FullUserOptionContainer {
+    width: 100%;
+    height: 50px;
+    background-color: #EA9010;
+
+}
+
+#FullUserOptionContainer div {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+}
+
+#FullUserOptionContainer div div {
+    width: 100%;
+    height: 100%;
+    background: #3C153B;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#FullUserOptionContainer div div button {
+    font-size: 30px;
+    background: #3C153B;
+
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: rgb(218, 218, 218);
+
+
+}

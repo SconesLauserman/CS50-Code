@@ -1,0 +1,22 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F0C987;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.full_container {
+    display: inline-block;
+}
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+#FullUserList {
+    overflow: hidden;
+    overflow-y: scroll;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/Chat/GeneralSettings.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/Chat/Imported.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/Chat/LowerHeader.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/Chat/Text.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/Chat/UpperHeader.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/Chat/UserList.css') }}">
+    <!--{{ url_for('static', filename='js/script.js') }}-->
+
+
+
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aperson_add%3A">
+
+</head>
+
+<body>
+    <div id="FullPageContainer">
+        <div class="test" id="FullHeaderContainer">
+            <div class="inner_test" id="FullUpperHeaderContainer">
+                <div id="FullUpperLogoItemContainer">
+                    <div id="FullUpperLogoItemImgContainer">
+                        <button style="width: 80px; height: 80px;" id="UsernameButtonText">{{ session.username}}</button>
+                    </div>
+                </div>
+                <div id="FullUpperLoginItemContainer">
+                    <div id="FullUpperLoginListContainer">
+                        <div id="FullUpperLoginItemListContainer">
+                            <div>
+                                <form action="/login" method="POST">
+                                    <button type="submit" id="LoginMoveButton">Logout</button>
+                                </form>
+                            </div>
+                            <div>
+                                <form action="/register" method="POST">
+                                    <button type="submit" id="RegisterMoveButton">New account</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="FullUpperPagesItemContainer">
+                    <div id="FullUpperPagesItemListContainer">
+                        <div>
+                            <form action="/home" method="POST">
+                                <button type="submit">HOME</button>
+                            </form>
+                        </div>
+                        <div>
+                            <form action="/about" method="POST">
+                                <button type="submit">ABOUT</button>
+                            </form>
+                        </div>
+                        <div>
+                            <form action="/chat" method="POST">
+                                <button type="submit">CHAT</button>
+                            </form>
+                        </div>
+
+                        <div>
+                            <form action="/contakt" method="POST">
+                                <button type="submit">CONTAKT</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="inner_test" id="FullLowerHeaderContainer">
+                <div id="FullLowerHeaderContainerInner">
+                    <div id="UsernameDisplayContainer">
+                        <div id="FriendUsernamecontainer">
+                            <button id="FriendUsernameDisplayButton"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="FullUserContainer" class="full_container">
+
+            <div id="FullUserOptionContainer">
+                <div class="full_user_option_item_container">
+                    <div id="FullUserAddContainerOnclick">
+                        <button class="material-symbols-outlined">person_add</button> <span id="UserOptionAddFriend">Add
+                            Friend</span>
+
+                    </div>
+                </div>
+                <div class="full_user_option_item_container">
+                    <div id="FullGroupAddContainerOnclick">
+                        <button class="material-symbols-outlined">group_add</button> <span id="UserOptionAddGroup">Add
+                            Group</span>
+                    </div>
+                </div>
+            </div>
+            <div id="FullSearchUserInputContainer">
+                <input type="search" class="material-symbols-outlined" id="SearchUserInput" placeholder="search">
+            </div>
+            <ul id="FullUserList">
+
+            </ul>
+        </div>
+        <div id="FullTextContainer" class="full_container">
+            <div id="NoUsersShownPage">
+                <center>There is no pages chosen currently</center>
+            </div>
+            <div id="FullInputBarContainer">
+                <textarea name="TextMessage" id="TextAreaMessage" rows="1"></textarea>
+                <button type="submit" id="SendTextMessageButton">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='Script/Chat/ChatRender.js') }}"></script>
+    <script src="{{ url_for('static', filename='Script/Chat/SendMessage.js') }}"></script>
+
+</body>
+
+</html>

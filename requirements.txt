@@ -1,0 +1,3 @@
+flask
+ssl
+secure-smtplib

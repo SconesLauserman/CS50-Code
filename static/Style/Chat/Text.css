@@ -1,0 +1,71 @@
+#FullTextContainer {
+    width: 80%;
+    height: 700px;
+    background-color: #FEFAE0;
+    float: right;
+}
+.CurrentUserMessageClass {
+    width: max-content;
+    border: 2px solid black;
+    background-color: #dee7df;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 5px;
+}
+.FriendUserMessageClass {
+    width: max-content;
+    border: 2px solid black;
+    background-color: #4AAD52;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 5px;
+}
+.CurrentUserMessageContainer {
+    display: flex;
+    justify-content: right;
+}
+.CurrentUserMessageClass div {
+    height: 20px;
+}
+.FriendUserMessageContainer {
+    display: flex;
+    justify-content: left;
+}
+.CurrentUserMessageContainer div button {
+    float: right;
+}
+#NoUsersShownPage {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100% - 100px);
+}
+#TextAreaMessage {
+    width: 70%;
+    float: left;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    height: auto;
+}
+#FullInputBarContainer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+#FullInputBarContainer form  {
+    width: 100%;
+    
+}
+#SendTextMessageButton {
+    width: 10%;
+    float: left;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: #e7d63a;
+    font-size: 20px;
+    height: 23px;
+
+}

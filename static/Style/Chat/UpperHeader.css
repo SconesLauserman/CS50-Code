@@ -1,0 +1,129 @@
+#FullUpperHeaderContainer {
+    width: 100%;
+    height: 80px;
+    background: #DDA15E;
+
+}
+
+#FullHeaderContainer {
+    width: 80%;
+    height: 140px;
+    background: #DDA15E;
+    display: block;
+    float: right;
+}
+
+#FullUpperLogoItemContainer {
+    width: 33%;
+    float: left;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#FullUpperPagesItemContainer {
+    width: 33%;
+    float: right;
+    height: 100%;
+
+}
+
+#FullUpperPagesItemContainer div {
+    width: 100%;
+    float: left;
+    height: 100%;
+
+}
+
+
+
+#FullUpperPagesItemListContainer {
+    width: 100%;
+}
+
+#FullUpperPagesItemListContainer div {
+    width: 25%;
+}
+
+#FullUpperPagesItemListContainer div form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#FullUpperPagesItemListContainer div form button {
+    width: 100%;
+    height: 50%;
+    border: None;
+    background: None;
+    cursor: pointer;
+}
+
+#FullUpperLoginItemContainer {
+    width: 33%;
+    float: right;
+    height: 100%;
+}
+
+#FullUpperLoginListContainer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#FullUpperLoginListContainer div div {
+    font-size: 20px;
+}
+
+#LoginMoveButton {
+    width: 100px;
+    height: 50%;
+    cursor: pointer;
+}
+
+#RegisterMoveButton {
+    width: 100px;
+    height: 50%;
+    cursor: pointer;
+}
+
+#FullUpperLoginListContainer {
+    height: 100%;
+}
+
+#FullUpperLoginItemListContainer div {
+    height: 100%;
+}
+
+#FullUpperLoginItemListContainer div form {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#LoginMoveButton {
+    width: 100px;
+    height: 50%;
+    cursor: pointer;
+}
+
+#RegisterMoveButton {
+    width: 100px;
+    height: 50%;
+    cursor: pointer;
+}
+
+#FullUpperLoginListContainer {
+    height: 100%;
+}
+
+#FullUpperLoginItemListContainer div {
+    height: 100%;
+}
+
+#FullUpperLoginItemListContainer div form {
+    height: 100%;
+}

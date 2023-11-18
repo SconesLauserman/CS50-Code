@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/Chat/UpperHeader.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/Login/Login.css') }}">
+
+</head>
+<body>
+    <div id="FullPage0Container">
+        <div id="FullPage1Container" class="center">
+            <div id="FullPage2Container" class="center">
+                <div id="FullPage3Container" class="center">
+                    <div id="FullLoginPageForm1Container">
+                        <div id="FullLoginPageForm2Container">
+                            <div id="FullLoginPageForm3Container">
+                                <form action="/CheckLoginData" method="POST">
+                                    <div id="FullUsernameFormContainer">
+                                        <input type="text" class="input_bar_check change_state_of_input" name="Username">
+                                        <span class="input_text_register_form change_state_of_text">Username</span>
+                                    </div>
+
+                                    <div id="FullPasswordFormContainer">
+                                        <input type="password" class="input_bar_check change_state_of_input" name="Password">
+                                        <span class="input_text_register_form change_state_of_text">Password</span>
+                                    </div>
+                                    <div id="FullSubmitFormContainer">
+                                        <button type="submit" id="SubmitRegisterFormButton">SUBMIT</button>
+                                    </div>
+                                </form>
+                                <form action="/register" method="post">
+                                    <button type="submit">Register?</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='Script/Login/CheckValidCSS.js') }}"></script>
+
+</body>
+</html>

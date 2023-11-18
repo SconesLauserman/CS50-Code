@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/Register/Register.css') }}">
+</head>
+
+<body>
+
+    <div id="FullPage0Container">
+        <div id="FullPage1Container" class="center">
+            <div id="FullPage2Container" class="center">
+                <div id="FullPage3Container" class="center">
+
+                    <div id="FullLoginPageForm1Container">
+                        <div id="FullLoginPageForm2Container">
+                            <div id="FullLoginPageForm3Container">
+                                <form action="/ProccesRegisterData" method="POST">
+                                    <div id="FullNameFormContainer">
+                                        <div>
+                                            <input type="text" style=" height: 40%; float: left; margin-right: 10px;"
+                                                name="FirstName" class="input_bar_check change_state_of_input">
+
+                                            <span class="input_text_register_form change_state_of_text">First Name</span>
+                                        </div>
+                                        <div>
+
+                                            <input type="text" style=" height: 40%; float: left;" name="LastName"
+                                                class="input_bar_check change_state_of_input">
+                                            <span class="input_text_register_form change_state_of_text">Last Name</span>
+                                        </div>
+
+                                    </div>
+                                    <div id="FullUsernameFormContainer">
+                                        <input type="text" class="input_bar_check change_state_of_input" name="Username" id="UsernameInputElement">
+                                        <span class="input_text_register_form change_state_of_text" id="InputUsernameTextElement">Username</span>
+                                    </div>
+                                    <div id="FullEmailFormContainer">
+                                        <input type="email" class="input_bar_check change_state_of_input" id="EmailInputForm" name="Email">
+                                        <span class="input_text_register_form change_state_of_text" id="EmailTextForm">Email</span>
+                                    </div>
+                                    <div id="FullPasswordFormContainer">
+                                        <input type="password" class="input_bar_check change_state_of_input" name="Password">
+                                        <span class="input_text_register_form change_state_of_text">Password</span>
+                                    </div>
+                                    <div id="FullSubmitFormContainer">
+                                        <button type="submit" id="SubmitRegisterFormButton">SUBMIT</button>
+                                    </div>
+                                </form>
+                                <form action="/login" method="post">
+                                    <button type="submit">Login?</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='Script/Register/CheckValidCSS.js') }}"></script>
+
+</body>
+
+</html>
