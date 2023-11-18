@@ -1,7 +1,8 @@
-    __ Real Time Chat App With Login System That Includes Email Verification __
-    
-    1. Video Demo:  https://youtu.be/1zVOE9AyhWQ 
-    2. Description: A website that allows users to send messages, at any moment.
+### Real Time Chat App With Login System That Includes Email Verification
+
+1. **Video Demo:** [Watch the demo](https://youtu.be/1zVOE9AyhWQ)
+2. **Description:** A website that allows users to send messages at any moment.
+
 
     Register/Log in:
 
