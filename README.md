@@ -4,17 +4,18 @@
 2. **Description:** A website that allows users to send messages at any moment.
 
 
-    Register/Log in:
+Register/Log in:
 
     When you go into the website you will get prompted to either log in or register, you don't have access to any other page.
     To log in you'll have to give 5 data values FirstName, LastName, Username, Email, Password.
     TO log in you have to fill some different requirements here is them all:
-- FirstName: /^[a-zA-Z]*$/
-- LastName: /^[a-zA-Z]*$/
-- Username: "Username"
-- Email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-- Password: /^[^,]*$/
-- Code: /^[0-9].+$/
+### Regexes:
+    - FirstName: /^[a-zA-Z]*$/
+    - LastName: /^[a-zA-Z]*$/
+    - Username: "Username"
+    - Email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    - Password: /^[^,]*$/
+    - Code: /^[0-9].+$/
   This is the regexes you have to follow to complete register, the reason username don't have a regex,d
     is because you can be named anything you want, it just has to be unique.
     When you have completed the first step of register you will get a mail, or get sent back to register if you did it wrong.
